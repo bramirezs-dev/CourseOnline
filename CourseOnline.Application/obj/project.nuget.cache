@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "K108Gz3Ce417YtNsujzoQci0LBDrKcaNGdlUdJUgiJx11bOIwRJZaq413n4GOq2VMaIvv7CTgCOZMiyS+NhihQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\briam\\Documents\\develop\\backend\\csharp\\CoursesOnline\\CourseOnline.Application\\CourseOnline.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\briam\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
