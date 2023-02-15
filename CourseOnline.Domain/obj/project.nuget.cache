@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NKSNWbUED6pGCYi7zlbXXdkTBMRsXZZxpYjh3avv/ou/XHwwynlnL/u9wS5yW94ivoG75hmdw7puEGN26QpJWQ==",
+  "dgSpecHash": "jSsWc+Y2fW3qj9UVf6zWL+cScAuK+B5z25pS6tcaNfkPsAijf7rxX61uxRTBZYL5QGG5rXot3rUodtD8QA/BkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\briam\\Documents\\develop\\backend\\csharp\\CoursesOnline\\CourseOnline.Domain\\CourseOnline.Domain.csproj",
+  "projectFilePath": "/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/CourseOnline.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

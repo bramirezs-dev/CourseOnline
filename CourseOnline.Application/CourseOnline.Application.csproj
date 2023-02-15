@@ -17,10 +17,30 @@
     <Folder Include="Features\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Mappings\" />
+    <Folder Include="Features\Courses\" />
+    <Folder Include="Features\Courses\Commands\" />
+    <Folder Include="Features\Courses\Queries\" />
+    <Folder Include="Features\Courses\Queries\GetAllCourses\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.5.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Features\Courses\" />
+    <None Remove="Features\Courses\Commands\" />
+    <None Remove="Features\Courses\Queries\" />
+    <None Remove="Features\Courses\Queries\GetAllCourses\" />
+    <None Remove="AutoMapper" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="FluentValidation" />
+    <None Remove="FluentValidation.DependencyInjectionExtensions" />
+  </ItemGroup>
 </Project>

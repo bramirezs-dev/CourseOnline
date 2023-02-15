@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
@@ -13,6 +14,15 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CourseOnline.Application\CourseOnline.Application.csproj" />
+    <ProjectReference Include="..\CourseOnline.Infraestructure.Persistence\CourseOnline.Infraestructure.Persistence.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Controllers\v1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\v1\" />
+  </ItemGroup>
 </Project>

@@ -1,0 +1,17 @@
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/bin/Debug/net7.0/CourseOnline.Infraestructure.Persistence.deps.json
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/bin/Debug/net7.0/CourseOnline.Infraestructure.Persistence.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/bin/Debug/net7.0/CourseOnline.Infraestructure.Persistence.pdb
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/bin/Debug/net7.0/CourseOnline.Application.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/bin/Debug/net7.0/CourseOnline.Domain.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/bin/Debug/net7.0/CourseOnline.Application.pdb
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/bin/Debug/net7.0/CourseOnline.Domain.pdb
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/obj/Debug/net7.0/CourseOnline.Infraestructure.Persistence.csproj.AssemblyReference.cache
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/obj/Debug/net7.0/CourseOnline.Infraestructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/obj/Debug/net7.0/CourseOnline.Infraestructure.Persistence.AssemblyInfoInputs.cache
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/obj/Debug/net7.0/CourseOnline.Infraestructure.Persistence.AssemblyInfo.cs
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/obj/Debug/net7.0/CourseOnline.Infraestructure.Persistence.csproj.CoreCompileInputs.cache
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/obj/Debug/net7.0/CourseOnline.Infraestructure.Persistence.csproj.CopyComplete
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/obj/Debug/net7.0/CourseOnline.Infraestructure.Persistence.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/obj/Debug/net7.0/refint/CourseOnline.Infraestructure.Persistence.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/obj/Debug/net7.0/CourseOnline.Infraestructure.Persistence.pdb
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/obj/Debug/net7.0/ref/CourseOnline.Infraestructure.Persistence.dll

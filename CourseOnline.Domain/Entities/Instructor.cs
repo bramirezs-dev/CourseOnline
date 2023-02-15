@@ -18,6 +18,6 @@ namespace CourseOnline.Domain.Entities
 
         public byte[] ProfilePhoto { get; set; }
 
-        public ICollection<CourseInstructor> CourseLink { get; set; }
+       /* public ICollection<CourseInstructor> CourseLink { get; set; }*/
     }
 }

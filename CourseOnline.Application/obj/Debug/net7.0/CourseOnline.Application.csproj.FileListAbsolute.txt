@@ -1,0 +1,15 @@
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/bin/Debug/net7.0/CourseOnline.Application.deps.json
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/bin/Debug/net7.0/CourseOnline.Application.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/bin/Debug/net7.0/CourseOnline.Application.pdb
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/bin/Debug/net7.0/CourseOnline.Domain.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/bin/Debug/net7.0/CourseOnline.Domain.pdb
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/obj/Debug/net7.0/CourseOnline.Application.csproj.AssemblyReference.cache
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/obj/Debug/net7.0/CourseOnline.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/obj/Debug/net7.0/CourseOnline.Application.AssemblyInfoInputs.cache
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/obj/Debug/net7.0/CourseOnline.Application.AssemblyInfo.cs
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/obj/Debug/net7.0/CourseOnline.Application.csproj.CoreCompileInputs.cache
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/obj/Debug/net7.0/CourseOnline.Application.csproj.CopyComplete
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/obj/Debug/net7.0/CourseOnline.Application.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/obj/Debug/net7.0/refint/CourseOnline.Application.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/obj/Debug/net7.0/CourseOnline.Application.pdb
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/obj/Debug/net7.0/ref/CourseOnline.Application.dll

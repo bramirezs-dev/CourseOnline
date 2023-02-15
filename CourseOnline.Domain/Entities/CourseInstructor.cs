@@ -11,8 +11,8 @@ namespace CourseOnline.Domain.Entities
         public int CourseId { get; set; }
         public int InstructorId { get; set; }
 
-        public Course Course { get; set; }
+        /*public Course Course { get; set; }
 
-        public Instructor Instructor { get; set; }
+        public Instructor Instructor { get; set; }*/
     }
 }
