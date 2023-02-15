@@ -4,6 +4,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using CourseOnline.API.Middlewares;
 using CourseOnline.API.Extensions;
+using CourseOnline.Domain.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,8 @@ builder.Services.AddSwaggerGen();
 //Add own services
 builder.Services.AddApplicationLayer();
 builder.Services.AddPersistenceLayer(configuration);
+
+
 
 //Configuration Swagger
 builder.Services.AddSwaggerGen(swagger => {

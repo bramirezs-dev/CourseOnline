@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = CourseOnline.Domain
+build_property.ProjectDir = /Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/
