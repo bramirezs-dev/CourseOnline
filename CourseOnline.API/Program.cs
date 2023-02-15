@@ -2,6 +2,7 @@ using CourseOnline.Application;
 using CourseOnline.Infraestructure.Persistence;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Mvc;
+using CourseOnline.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,6 +37,11 @@ builder.Services.AddApiVersioning( config =>
 
 
 var app = builder.Build();
+
+//put middlewares
+
+app.UseMiddleware<ErrorHandlerMiddleware>();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -1,5 +1,6 @@
 ﻿using System;
 using AutoMapper;
+using CourseOnline.Application.DTOs.Courses;
 using CourseOnline.Domain.Entities;
 
 namespace CourseOnline.Application.Mappings
@@ -8,7 +9,7 @@ namespace CourseOnline.Application.Mappings
     {
         public GeneralProfile()
         {
-            CreateMap<Course, Course>().ReverseMap();
+            CreateMap<Course, CreateCourseDTO>().ReverseMap();
         }
     }
 }

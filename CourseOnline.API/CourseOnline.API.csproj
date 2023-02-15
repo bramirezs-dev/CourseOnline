@@ -23,8 +23,10 @@
   <ItemGroup>
     <None Remove="Controllers\v1\" />
     <None Remove="Microsoft.AspNetCore.Mvc.Versioning" />
+    <None Remove="Middlewares\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\v1\" />
+    <Folder Include="Middlewares\" />
   </ItemGroup>
 </Project>
