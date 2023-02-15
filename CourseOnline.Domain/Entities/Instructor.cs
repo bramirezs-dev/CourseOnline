@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace CourseOnline.Domain.Entities
 {
-    public class Instructor
+    public class Instructor :BaseEntity
     {
-        public int InstructorId { get; set; }
 
         public string Name { get; set; }
 
@@ -18,6 +17,6 @@ namespace CourseOnline.Domain.Entities
 
         public byte[] ProfilePhoto { get; set; }
 
-       /* public ICollection<CourseInstructor> CourseLink { get; set; }*/
+        public ICollection<CourseInstructor> CourseLink { get; set; }
     }
 }
