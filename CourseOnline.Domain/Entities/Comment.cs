@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace CourseOnline.Domain.Entities
 {
-    public class Comment
+    public class Comment : BaseEntity
     {
-        public int CommentId { get; set; }
 
         public string Student { get; set; }
 
@@ -16,8 +15,8 @@ namespace CourseOnline.Domain.Entities
 
         public string TextComment { get; set; }
 
-        public int CursoId { get; set; }
+        public Guid CourseId { get; set; }
 
-        /*public Course Course { get; set; }*/
+        public Course Course { get; set; }
     }
 }

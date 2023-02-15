@@ -3,9 +3,9 @@ using CourseOnline.Infraestructure.Persistence;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using CourseOnline.API.Middlewares;
+using CourseOnline.API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 // Add services to the container.
 
@@ -35,8 +35,7 @@ builder.Services.AddApiVersioning( config =>
     config.ReportApiVersions = true;
 });
 
-
-var app = builder.Build();
+var app = builder.Build().SeedData();
 
 //put middlewares
 

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace CourseOnline.Domain.Entities
 {
-    public class CourseInstructor
+    public class CourseInstructor 
     {
-        public int CourseId { get; set; }
-        public int InstructorId { get; set; }
+        public Guid CourseId { get; set; }
+        public Guid InstructorId { get; set; }
 
-        /*public Course Course { get; set; }
+        public Course Course { get; set; }
 
-        public Instructor Instructor { get; set; }*/
+        public Instructor Instructor { get; set; }
     }
 }
