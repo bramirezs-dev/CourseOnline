@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CourseOnline.API.Controllers.v1
 {
-    [Route("api/v{version}/{controller}")]
+    [Route("api/v{version}/[controller]")]
     [ApiController]
     public class CoursesController : BaseController
     {

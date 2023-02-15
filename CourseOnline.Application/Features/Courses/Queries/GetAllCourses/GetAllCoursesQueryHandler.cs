@@ -16,8 +16,16 @@ namespace CourseOnline.Application.Features.Courses.Queries.GetAllCourses
 
         public async Task<IReadOnlyList<Course>> Handle(GetAllCoursesQuery request, CancellationToken cancellationToken)
         {
-            var courses = await _genericRepositoryAsync.GetAllAsync();
-            return courses;
+            try
+            {
+                var courses = await _genericRepositoryAsync.GetAllAsync();
+                return courses;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
         }
     }
 }

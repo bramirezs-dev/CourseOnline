@@ -16,7 +16,7 @@ namespace CourseOnline.Domain.Entities
 
         public DateTime PublishDate { get; set; }
 
-        public byte[] CoverPhoto { get; set; }
+        public byte[]? CoverPhoto { get; set; }
         /*public Price PromotionPrice { get; set; }
 
         public ICollection<Comment> Comments { get; set; }
