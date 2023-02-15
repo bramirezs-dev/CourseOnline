@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace CourseOnline.Domain.Entities
 {
-    public  class Course
+    public  class Course : BaseEntity
     {
-        public int CourseId { get; set; }
 
         public string Title { get; set; }
 

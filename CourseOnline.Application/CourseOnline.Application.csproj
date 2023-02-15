@@ -21,6 +21,8 @@
     <Folder Include="Features\Courses\Commands\" />
     <Folder Include="Features\Courses\Queries\" />
     <Folder Include="Features\Courses\Queries\GetAllCourses\" />
+    <Folder Include="Features\Courses\Commands\CreateCourse\" />
+    <Folder Include="DTOs\Courses\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,5 +44,7 @@
     <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
     <None Remove="FluentValidation" />
     <None Remove="FluentValidation.DependencyInjectionExtensions" />
+    <None Remove="Features\Courses\Commands\CreateCourse\" />
+    <None Remove="DTOs\Courses\" />
   </ItemGroup>
 </Project>

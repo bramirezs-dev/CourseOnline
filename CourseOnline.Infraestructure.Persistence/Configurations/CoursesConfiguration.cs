@@ -11,8 +11,8 @@ namespace CourseOnline.Infraestructure.Persistence.Configurations
 
         public void Configure(EntityTypeBuilder<Course> builder)
         {
-            builder.ToTable("Cursos");
-            builder.Property(p=>p.CourseId).HasColumnName("CursoId");
+            builder.ToTable("Courses");
+            builder.Property(p=>p.Id).HasColumnName("CourseId");
 
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using CourseOnline.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,8 @@ namespace CourseOnline.Infraestructure.Persistence.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CourseInstructor>().HasKey(ci => new { ci.InstructorId, ci.CourseId });
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
 
         DbSet<Course> Courses { get; set; }
