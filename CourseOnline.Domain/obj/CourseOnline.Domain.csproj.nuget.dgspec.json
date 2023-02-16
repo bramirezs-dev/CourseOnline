@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/CourseOnline.Domain.csproj": {}
+    "C:\\Users\\briam\\Documents\\develop\\backend\\csharp\\CoursesOnline\\CourseOnline.Domain\\CourseOnline.Domain.csproj": {}
   },
   "projects": {
-    "/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/CourseOnline.Domain.csproj": {
+    "C:\\Users\\briam\\Documents\\develop\\backend\\csharp\\CoursesOnline\\CourseOnline.Domain\\CourseOnline.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/CourseOnline.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\briam\\Documents\\develop\\backend\\csharp\\CoursesOnline\\CourseOnline.Domain\\CourseOnline.Domain.csproj",
         "projectName": "CourseOnline.Domain",
-        "projectPath": "/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/CourseOnline.Domain.csproj",
-        "packagesPath": "/Users/brian.ramirez/.nuget/packages/",
-        "outputPath": "/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/obj/",
+        "projectPath": "C:\\Users\\briam\\Documents\\develop\\backend\\csharp\\CoursesOnline\\CourseOnline.Domain\\CourseOnline.Domain.csproj",
+        "packagesPath": "C:\\Users\\briam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\briam\\Documents\\develop\\backend\\csharp\\CoursesOnline\\CourseOnline.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/brian.ramirez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\briam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
