@@ -12,9 +12,6 @@ namespace CourseOnline.API.Controllers.v1
     [ApiController]
     public class CoursesController : BaseController
     {
-        public CoursesController()
-        {
-        }
 
         [HttpGet]
         public async Task<IReadOnlyList<Course>> GetAllCourses()
