@@ -38,6 +38,7 @@ namespace CourseOnline.Infraestructure.Persistence
             }
 
             service.AddTransient(typeof(IGenericRepositoryAsync<>), typeof(GenericRepositoryAsync<>));
+            service.AddTransient<IUserRepositoryAsync, UserRepositoryAsync>();
 
             // Add Service Identity
             var builder = service.AddIdentityCore<User>();
