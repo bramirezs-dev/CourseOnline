@@ -23,6 +23,11 @@
     <Folder Include="Features\Courses\Queries\GetAllCourses\" />
     <Folder Include="Features\Courses\Commands\CreateCourse\" />
     <Folder Include="DTOs\Courses\" />
+    <Folder Include="Features\Security\" />
+    <Folder Include="Features\Security\Commands\" />
+    <Folder Include="Features\Security\Queries\" />
+    <Folder Include="Features\Security\Queries\Login\" />
+    <Folder Include="DTOs\Login\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,5 +51,10 @@
     <None Remove="FluentValidation.DependencyInjectionExtensions" />
     <None Remove="Features\Courses\Commands\CreateCourse\" />
     <None Remove="DTOs\Courses\" />
+    <None Remove="Features\Security\" />
+    <None Remove="Features\Security\Commands\" />
+    <None Remove="Features\Security\Queries\" />
+    <None Remove="Features\Security\Queries\Login\" />
+    <None Remove="DTOs\Login\" />
   </ItemGroup>
 </Project>

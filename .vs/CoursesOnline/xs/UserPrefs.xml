@@ -1,0 +1,68 @@
+﻿<Properties StartupConfiguration="{E4E637BD-39E3-40D4-A0D5-22689F2F4C6C}|http">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/Features/Courses/Queries/GetAllCourses/GetAllCoursesQueryHandler.cs" relfile="CourseOnline.Application/Features/Courses/Queries/GetAllCourses/GetAllCoursesQueryHandler.cs" line="26" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="CourseOnline.API/Extensions/HostBuilderExtensions.cs">
+    <Files>
+      <File FileName="CourseOnline.API/appsettings.json" Line="15" Column="1" />
+      <File FileName="CourseOnline.API/Controllers/WeatherForecastController.cs" Line="1" Column="1" />
+      <File FileName="CourseOnline.API/Controllers/BaseController.cs" Line="14" Column="55" />
+      <File FileName="CourseOnline.API/Controllers/v1/CoursesController.cs" Line="28" Column="1" />
+      <File FileName="CourseOnline.Application/Features/Courses/Queries/GetAllCourses/GetAllCoursesQuery.cs" Line="6" Column="18" />
+      <File FileName="CourseOnline.Application/Features/Courses/Queries/GetAllCourses/GetAllCoursesQueryHandler.cs" Line="26" Column="1" />
+      <File FileName="CourseOnline.Domain/Entities/Course.cs" Line="9" Column="19" />
+      <File FileName="CourseOnline.API/Program.cs" Line="26" Column="1" />
+      <File FileName="CourseOnline.Application/ServiceExtensions.cs" Line="15" Column="28" />
+      <File FileName="CourseOnline.Application/Features/Courses/Commands/CreateCourse/CreateCourseCommand.cs" Line="6" Column="35" />
+      <File FileName="CourseOnline.Application/Features/Courses/Commands/CreateCourse/CreateCourseCommandHandler.cs" Line="26" Column="26" />
+      <File FileName="CourseOnline.Application/Features/Courses/Commands/CreateCourse/CreateCourseCommandValidator.cs" Line="12" Column="107" />
+      <File FileName="CourseOnline.Application/DTOs/Courses/CreateCourseDTO.cs" Line="9" Column="9" />
+      <File FileName="CourseOnline.Domain/Entities/BaseEntity.cs" Line="4" Column="37" />
+      <File FileName="CourseOnline.Application/Exceptions/CustomException.cs" Line="6" Column="33" />
+      <File FileName="CourseOnline.API/Middlewares/ErrorHandlerMiddleware.cs" Line="9" Column="40" />
+      <File FileName="CourseOnline.Domain/Entities/Instructor.cs" Line="12" Column="9" />
+      <File FileName="CourseOnline.Infraestructure.Persistence/Configurations/CoursesConfiguration.cs" Line="19" Column="85" />
+      <File FileName="CourseOnline.Application/Mappings/GeneralProfile.cs" Line="12" Column="46" />
+      <File FileName="CourseOnline.Application/Interfaces/IGenericRepositoryAsync.cs" Line="12" Column="18" />
+      <File FileName="CourseOnline.Infraestructure.Persistence/Context/CoursesOnlineConext.cs" Line="17" Column="1" />
+      <File FileName="CourseOnline.Domain/Entities/Comment.cs" Line="17" Column="1" />
+      <File FileName="CourseOnline.Domain/Entities/CourseInstructor.cs" Line="15" Column="1" />
+      <File FileName="CourseOnline.Domain/Entities/Price.cs" Line="12" Column="1" />
+      <File FileName="CourseOnline.Infraestructure.Persistence/Configurations/InstructorsConfiguration.cs" Line="22" Column="6" />
+      <File FileName="CourseOnline.Domain/Entities/User.cs" Line="12" Column="1" />
+      <File FileName="CourseOnline.API/Extensions/HostBuilderExtensions.cs" Line="39" Column="83" />
+      <File FileName="CourseOnline.Infraestructure.Persistence/ServiceExtensions.cs" Line="47" Column="58" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CoursesOnline" expanded="True">
+            <Node name="CourseOnline.API" expanded="True">
+              <Node name="Extensions" expanded="True">
+                <Node name="HostBuilderExtensions.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="CourseOnline.Domain" expanded="True">
+              <Node name="Entities" expanded="True" />
+            </Node>
+            <Node name="CourseOnline.Infraestructure.Persistence" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Context" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CourseOnline.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
