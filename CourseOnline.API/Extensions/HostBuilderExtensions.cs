@@ -1,6 +1,7 @@
 ﻿using System;
 using CourseOnline.Domain.Entities;
 using CourseOnline.Infraestructure.Persistence.Context;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace CourseOnline.API.Extensions
@@ -14,6 +15,7 @@ namespace CourseOnline.API.Extensions
                 var services = scope.ServiceProvider;
                 try
                 {
+                    var userManager = services.GetRequiredService<UserManager<User>>();
                     var courseOnlineContext = services.GetRequiredService<CoursesOnlineConext>();
                     if (!courseOnlineContext.Database.IsInMemory())
                     {
@@ -22,8 +24,14 @@ namespace CourseOnline.API.Extensions
 
                     if (!courseOnlineContext.Courses.Any())
                     {
-                        var uno = "";
-                        //SeedDataTables(courseOnlineContext);
+                        //var uno = "";
+                        SeedDataTables(courseOnlineContext);
+                    }
+
+                    if (!userManager.Users.Any())
+                    {
+                        var user = new User { NameComplete = "Brian Ramirez Salazar", UserName = "bramirez", Email = "brian.ramirez@dev.com" };
+                        userManager.CreateAsync(user, "Passwords123$").Wait();
                     }
                     
                 }
@@ -88,6 +96,11 @@ namespace CourseOnline.API.Extensions
 
             courseOnlineContext.Prices.AddRange(prices);
             courseOnlineContext.SaveChangesAsync().Wait();
+
+            //insert user
+
+
+
         }
     }
 }

@@ -3,3 +3,10 @@
 /Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/obj/Debug/net7.0/CourseOnline.Domain.AssemblyInfoInputs.cache
 /Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/obj/Debug/net7.0/CourseOnline.Domain.AssemblyInfo.cs
 /Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/obj/Debug/net7.0/CourseOnline.Domain.csproj.CoreCompileInputs.cache
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/bin/Debug/net7.0/CourseOnline.Domain.deps.json
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/bin/Debug/net7.0/CourseOnline.Domain.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/bin/Debug/net7.0/CourseOnline.Domain.pdb
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/obj/Debug/net7.0/CourseOnline.Domain.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/obj/Debug/net7.0/refint/CourseOnline.Domain.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/obj/Debug/net7.0/CourseOnline.Domain.pdb
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Domain/obj/Debug/net7.0/ref/CourseOnline.Domain.dll

@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using CourseOnline.API.Middlewares;
 using CourseOnline.API.Extensions;
 using CourseOnline.Domain.Entities;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.AspNetCore.Authentication;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +26,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddApplicationLayer();
 builder.Services.AddPersistenceLayer(configuration);
 
-
+// add service for identity
+builder.Services.TryAddSingleton<ISystemClock, SystemClock>();
 
 //Configuration Swagger
 builder.Services.AddSwaggerGen(swagger => {

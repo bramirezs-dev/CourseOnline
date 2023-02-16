@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NUcik+RDRwKpfRj3iQLbURLwm6cczsNIdEbktdTzz51O6NiuHRtw2ayd3akT1o+VK+EqGTWaeeygvQ9otRoXhg==",
+  "dgSpecHash": "gdiA8mBnzrrnbI1tnf+AbcnAqIGT1m/LjYZV5+6SEbgT2DAwvy4mMpOk4c8Pi8NGP3yfRmmurkBQiaHWqL6Yew==",
   "success": true,
   "projectFilePath": "/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Infraestructure.Persistence/CourseOnline.Infraestructure.Persistence.csproj",
   "expectedPackageFiles": [

@@ -8,7 +8,7 @@ namespace CourseOnline.Application.Features.Courses.Commands.CreateCourse
         public CreateCourseCommandValidator()
         {
             RuleFor(dto => dto.courseDTO.Title).NotNull().WithMessage("it's necesary title");
-            RuleFor(dto => dto.courseDTO.Description).NotNull().WithMessage("it's necesary description");
+            RuleFor(dto => dto.courseDTO.Description).NotNull().NotEmpty().WithMessage("it's necesary description");
             RuleFor(dto => dto.courseDTO.PublishDate).NotNull().WithMessage("it's necesary publish date");
         }
     }
