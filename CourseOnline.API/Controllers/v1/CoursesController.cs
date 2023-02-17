@@ -4,6 +4,7 @@ using CourseOnline.Application.Features.Courses.Commands.CreateCourse;
 using CourseOnline.Application.Features.Courses.Queries.GetAllCourses;
 using CourseOnline.Domain.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CourseOnline.API.Controllers.v1
@@ -14,6 +15,7 @@ namespace CourseOnline.API.Controllers.v1
     {
 
         [HttpGet]
+        //[Authorize]
         public async Task<IReadOnlyList<Course>> GetAllCourses()
         {
             return await Mediator.Send(new GetAllCoursesQuery());

@@ -3,6 +3,7 @@ using System.Net;
 using AutoMapper;
 using CourseOnline.Application.DTOs.Login;
 using CourseOnline.Application.Exceptions;
+using CourseOnline.Application.Interfaces;
 using CourseOnline.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -14,12 +15,14 @@ namespace CourseOnline.Application.Features.Security.Queries.Login
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
         private readonly IMapper _mapper;
+        private readonly IJwtGenerator _jwtGenerator;
 
-        public LoginQueryHandler(UserManager<User> userManager, SignInManager<User> signInManager, IMapper mapper)
+        public LoginQueryHandler(UserManager<User> userManager, SignInManager<User> signInManager, IMapper mapper, IJwtGenerator jwtGenerator)
 		{
             _userManager = userManager;
             _signInManager = signInManager;
             _mapper = mapper;
+            _jwtGenerator = jwtGenerator;
         }
 
         public async Task<UserDTO> Handle(LoginQuery request, CancellationToken cancellationToken)
@@ -34,7 +37,8 @@ namespace CourseOnline.Application.Features.Security.Queries.Login
 
             if (isValid.Succeeded)
             {
-                var result = _mapper.Map<UserDTO>(user); 
+                var result = _mapper.Map<UserDTO>(user);
+                result.Token = _jwtGenerator.CreateToken(user);
                 return result;
             }
 

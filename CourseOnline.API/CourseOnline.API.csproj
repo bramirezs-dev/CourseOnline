@@ -15,11 +15,15 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CourseOnline.Application\CourseOnline.Application.csproj" />
     <ProjectReference Include="..\CourseOnline.Infraestructure.Persistence\CourseOnline.Infraestructure.Persistence.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\CourseOnline.Security\CourseOnline.Security.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
@@ -30,6 +34,7 @@
     <None Remove="Middlewares\" />
     <None Remove="Extensions\" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\v1\" />

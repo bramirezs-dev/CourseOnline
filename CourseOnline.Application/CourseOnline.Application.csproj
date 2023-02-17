@@ -28,6 +28,8 @@
     <Folder Include="Features\Security\Queries\" />
     <Folder Include="Features\Security\Queries\Login\" />
     <Folder Include="DTOs\Login\" />
+    <Folder Include="Features\Security\Commands\Register\" />
+    <Folder Include="Features\Security\Queries\CurrentUser\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -56,5 +58,7 @@
     <None Remove="Features\Security\Queries\" />
     <None Remove="Features\Security\Queries\Login\" />
     <None Remove="DTOs\Login\" />
+    <None Remove="Features\Security\Commands\Register\" />
+    <None Remove="Features\Security\Queries\CurrentUser\" />
   </ItemGroup>
 </Project>
