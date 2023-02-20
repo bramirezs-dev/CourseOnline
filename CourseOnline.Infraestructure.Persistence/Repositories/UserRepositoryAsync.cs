@@ -10,7 +10,7 @@ namespace CourseOnline.Infraestructure.Persistence.Repositories
     {
         private readonly DbSet<User> _user;
 
-        public UserRepositoryAsync(CoursesOnlineConext coursesOnlineConext):base(coursesOnlineConext)
+        public UserRepositoryAsync(CoursesOnlineContext coursesOnlineConext):base(coursesOnlineConext)
 		{
             _user = coursesOnlineConext.Set<User>();
 

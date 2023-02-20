@@ -36,7 +36,7 @@ namespace CourseOnline.API.Middlewares
             {
                 case CustomException<Object> ce:
                     logger.LogError(ex, "ErrorHandlerMiddleware");
-                    errors = ce.Data;
+                    errors = ce.Response;
                     context.Response.StatusCode = (int)ce.StatusCode; 
                     break;
                 case Exception e:

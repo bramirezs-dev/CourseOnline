@@ -14,6 +14,7 @@ using System.Text;
 using CourseOnline.Security.TokenSecurity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -55,6 +56,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                         ValidateIssuer = false
                     };
                 });
+
+//add configuration  reference circle en json
 
 
 

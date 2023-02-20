@@ -3,29 +3,30 @@ using CourseOnline.Application.Interfaces;
 using CourseOnline.Domain.Entities;
 using MediatR;
 using System.Linq;
+using CourseOnline.Application.DTOs.Courses;
+using AutoMapper;
+using CourseOnline.Application.Interfaces.Courses;
 
 namespace CourseOnline.Application.Features.Courses.Queries.GetAllCourses
 {
-    public class GetAllCoursesQueryHandler : IRequestHandler<GetAllCoursesQuery, IReadOnlyList<Course>>
+    public class GetAllCoursesQueryHandler : IRequestHandler<GetAllCoursesQuery, List<CourseDTO>>
     {
-        private readonly IGenericRepositoryAsync<Course> _genericRepositoryAsync;
-        public GetAllCoursesQueryHandler(IGenericRepositoryAsync<Course> genericRepositoryAsync)
+        private readonly ICourseRepositoryAsync _courseRepositoryAsync;
+        private readonly IMapper _mapper;
+
+        public GetAllCoursesQueryHandler(ICourseRepositoryAsync courseRepositoryAsync, IMapper mapper)
         {
-            _genericRepositoryAsync = genericRepositoryAsync;
+            _courseRepositoryAsync = courseRepositoryAsync;
+            _mapper = mapper;
         }
 
-        public async Task<IReadOnlyList<Course>> Handle(GetAllCoursesQuery request, CancellationToken cancellationToken)
+        public async Task<List<CourseDTO>> Handle(GetAllCoursesQuery request, CancellationToken cancellationToken)
         {
-            try
-            {
-                var courses = await _genericRepositoryAsync.GetAllAsync();
-                return courses;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            var courses = await _courseRepositoryAsync.GetCoursesComplete();
 
+            var coursesDTO = _mapper.Map<List<Course>, List<CourseDTO>>(courses);
+
+            return coursesDTO;
         }
     }
 }

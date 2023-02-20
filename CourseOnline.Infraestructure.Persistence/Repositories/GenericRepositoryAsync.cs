@@ -7,9 +7,9 @@ namespace CourseOnline.Infraestructure.Persistence.Repositories
 {
     public class GenericRepositoryAsync<T> : IGenericRepositoryAsync<T> where T : class
     {
-        private readonly CoursesOnlineConext _dbContext;
+        private readonly CoursesOnlineContext _dbContext;
 
-        public GenericRepositoryAsync(CoursesOnlineConext dbContext)
+        public GenericRepositoryAsync(CoursesOnlineContext dbContext)
         {
             _dbContext = dbContext;
 
@@ -35,7 +35,7 @@ namespace CourseOnline.Infraestructure.Persistence.Repositories
                 .ToListAsync();
         }
 
-        public async Task<T> GetByIdAsync(int id)
+        public async Task<T> GetByIdAsync(Guid id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }
