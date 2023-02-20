@@ -16,7 +16,7 @@ namespace CourseOnline.API.Extensions
                 try
                 {
                     var userManager = services.GetRequiredService<UserManager<User>>();
-                    var courseOnlineContext = services.GetRequiredService<CoursesOnlineConext>();
+                    var courseOnlineContext = services.GetRequiredService<CoursesOnlineContext>();
                     if (!courseOnlineContext.Database.IsInMemory())
                     {
                         courseOnlineContext.Database.Migrate();
@@ -44,7 +44,7 @@ namespace CourseOnline.API.Extensions
             return host;
         }
 
-        private static void SeedDataTables(CoursesOnlineConext courseOnlineContext)
+        private static void SeedDataTables(CoursesOnlineContext courseOnlineContext)
         {
             //data for course
             List<Course> courses = new List<Course>

@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CourseOnline.Infraestructure.Persistence.Context
 {
-    public class CoursesOnlineConext : IdentityDbContext<User>
+    public class CoursesOnlineContext : IdentityDbContext<User>
     {
-        public CoursesOnlineConext(DbContextOptions options):base(options)
+        public CoursesOnlineContext(DbContextOptions options):base(options)
         {
         }
 

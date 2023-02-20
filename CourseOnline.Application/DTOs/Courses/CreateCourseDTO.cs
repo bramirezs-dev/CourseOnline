@@ -13,6 +13,13 @@ namespace CourseOnline.Application.DTOs.Courses
         public DateTime PublishDate { get; set; }
 
         public byte[]? CoverPhoto { get; set; }
+
+        public List<Guid> Instructors { get; set; }
+
+        public decimal  Price { get; set; }
+
+        public decimal Promotion { get; set; }
+
     }
 }
 

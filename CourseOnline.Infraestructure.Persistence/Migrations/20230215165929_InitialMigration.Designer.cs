@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CourseOnline.Infraestructure.Persistence.Migrations
 {
-    [DbContext(typeof(CoursesOnlineConext))]
+    [DbContext(typeof(CoursesOnlineContext))]
     [Migration("20230215165929_InitialMigration")]
     partial class InitialMigration
     {

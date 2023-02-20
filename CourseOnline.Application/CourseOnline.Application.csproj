@@ -30,6 +30,14 @@
     <Folder Include="DTOs\Login\" />
     <Folder Include="Features\Security\Commands\Register\" />
     <Folder Include="Features\Security\Queries\CurrentUser\" />
+    <Folder Include="Interfaces\Courses\" />
+    <Folder Include="DTOs\Inastructors\" />
+    <Folder Include="DTOs\CourseInstructor\" />
+    <Folder Include="Features\Courses\Queries\GetCourse\" />
+    <Folder Include="Features\Courses\Commands\UpdateCourse\" />
+    <Folder Include="DTOs\Comment\" />
+    <Folder Include="DTOs\Price\" />
+    <Folder Include="Interfaces\Comments\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -60,5 +68,13 @@
     <None Remove="DTOs\Login\" />
     <None Remove="Features\Security\Commands\Register\" />
     <None Remove="Features\Security\Queries\CurrentUser\" />
+    <None Remove="Interfaces\Courses\" />
+    <None Remove="DTOs\Inastructors\" />
+    <None Remove="DTOs\CourseInstructor\" />
+    <None Remove="Features\Courses\Queries\GetCourse\" />
+    <None Remove="Features\Courses\Commands\UpdateCourse\" />
+    <None Remove="DTOs\Comment\" />
+    <None Remove="DTOs\Price\" />
+    <None Remove="Interfaces\Comments\" />
   </ItemGroup>
 </Project>

@@ -1,35 +1,33 @@
 ﻿<Properties StartupConfiguration="{E4E637BD-39E3-40D4-A0D5-22689F2F4C6C}|http">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.CourseOnline.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CourseOnline.API/Middlewares/ErrorHandlerMiddleware.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CourseOnline.Infraestructure.Persistence/Repositories/CourseRepositoryAsync.cs">
     <Files>
       <File FileName="CourseOnline.API/appsettings.json" />
       <File FileName="CourseOnline.API/Controllers/WeatherForecastController.cs" />
-      <File FileName="CourseOnline.API/Controllers/v1/CoursesController.cs" />
-      <File FileName="CourseOnline.Application/Features/Courses/Queries/GetAllCourses/GetAllCoursesQuery.cs" />
-      <File FileName="CourseOnline.Application/Features/Courses/Queries/GetAllCourses/GetAllCoursesQueryHandler.cs" />
-      <File FileName="CourseOnline.Domain/Entities/Course.cs" />
-      <File FileName="CourseOnline.API/Program.cs" />
+      <File FileName="CourseOnline.API/Controllers/v1/CoursesController.cs" Line="50" Column="10" />
+      <File FileName="CourseOnline.Application/Features/Courses/Queries/GetAllCourses/GetAllCoursesQuery.cs" Line="8" Column="18" />
+      <File FileName="CourseOnline.Application/Features/Courses/Queries/GetAllCourses/GetAllCoursesQueryHandler.cs" Line="28" Column="1" />
+      <File FileName="CourseOnline.Domain/Entities/Course.cs" Line="16" Column="36" />
+      <File FileName="CourseOnline.API/Program.cs" Line="73" Column="1" />
       <File FileName="CourseOnline.Application/ServiceExtensions.cs" />
       <File FileName="CourseOnline.Application/Features/Courses/Commands/CreateCourse/CreateCourseCommand.cs" />
       <File FileName="CourseOnline.Application/Features/Courses/Commands/CreateCourse/CreateCourseCommandHandler.cs" />
       <File FileName="CourseOnline.Application/Features/Courses/Commands/CreateCourse/CreateCourseCommandValidator.cs" />
-      <File FileName="CourseOnline.Application/DTOs/Courses/CreateCourseDTO.cs" />
-      <File FileName="CourseOnline.Domain/Entities/BaseEntity.cs" />
-      <File FileName="CourseOnline.Application/Exceptions/CustomException.cs" />
-      <File FileName="CourseOnline.API/Middlewares/ErrorHandlerMiddleware.cs" Line="54" Column="1" />
-      <File FileName="CourseOnline.Domain/Entities/Instructor.cs" />
+      <File FileName="CourseOnline.Application/DTOs/Courses/CreateCourseDTO.cs" Line="1" Column="1" />
+      <File FileName="CourseOnline.Domain/Entities/BaseEntity.cs" Line="6" Column="9" />
+      <File FileName="CourseOnline.Application/Exceptions/CustomException.cs" Line="6" Column="18" />
+      <File FileName="CourseOnline.API/Middlewares/ErrorHandlerMiddleware.cs" />
+      <File FileName="CourseOnline.Domain/Entities/Instructor.cs" Line="12" Column="9" />
       <File FileName="CourseOnline.Infraestructure.Persistence/Configurations/CoursesConfiguration.cs" />
-      <File FileName="CourseOnline.Application/Mappings/GeneralProfile.cs" />
-      <File FileName="CourseOnline.Application/Interfaces/IGenericRepositoryAsync.cs" />
-      <File FileName="CourseOnline.Infraestructure.Persistence/Context/CoursesOnlineConext.cs" />
-      <File FileName="CourseOnline.Domain/Entities/Comment.cs" />
-      <File FileName="CourseOnline.Domain/Entities/CourseInstructor.cs" />
-      <File FileName="CourseOnline.Domain/Entities/Price.cs" />
+      <File FileName="CourseOnline.Application/Mappings/GeneralProfile.cs" Line="22" Column="116" />
+      <File FileName="CourseOnline.Application/Interfaces/IGenericRepositoryAsync.cs" Line="6" Column="34" />
+      <File FileName="CourseOnline.Infraestructure.Persistence/Context/CoursesOnlineConext.cs" Line="11" Column="33" />
+      <File FileName="CourseOnline.Domain/Entities/Comment.cs" Line="12" Column="9" />
+      <File FileName="CourseOnline.Domain/Entities/CourseInstructor.cs" Line="9" Column="34" />
+      <File FileName="CourseOnline.Domain/Entities/Price.cs" Line="11" Column="9" />
       <File FileName="CourseOnline.Infraestructure.Persistence/Configurations/InstructorsConfiguration.cs" />
       <File FileName="CourseOnline.Domain/Entities/User.cs" />
-      <File FileName="CourseOnline.API/Extensions/HostBuilderExtensions.cs" Line="1" Column="1" />
-      <File FileName="CourseOnline.Infraestructure.Persistence/ServiceExtensions.cs" />
+      <File FileName="CourseOnline.API/Extensions/HostBuilderExtensions.cs" Line="19" Column="92" />
+      <File FileName="CourseOnline.Infraestructure.Persistence/ServiceExtensions.cs" Line="46" Column="1" />
       <File FileName="CourseOnline.Application/Features/Security/Queries/Login/LoginQuery.cs" />
       <File FileName="CourseOnline.Application/Features/Security/Queries/Login/LoginQueryHandler.cs" />
       <File FileName="CourseOnline.API/Controllers/v1/LoginController.cs" />
@@ -38,11 +36,37 @@
       <File FileName="CourseOnline.Security/TokenSecurity/JwtGenerator.cs" />
       <File FileName="CourseOnline.Security/ServiceExtensions.cs" />
       <File FileName="CourseOnline.Security/TokenSecurity/Keys.cs" />
-      <File FileName="CourseOnline.Application/Features/Security/Commands/Register/RegisterUserCommand.cs" Line="17" Column="32" />
-      <File FileName="CourseOnline.Application/Features/Security/Commands/Register/RegisterUserCommandHandler.cs" />
-      <File FileName="CourseOnline.Application/Features/Security/Commands/Register/RegisterUserCommandValdiator.cs" />
-      <File FileName="CourseOnline.Application/Interfaces/IUserRepositoryAsync.cs" />
-      <File FileName="CourseOnline.Infraestructure.Persistence/Repositories/UserRepositoryAsync.cs" />
+      <File FileName="CourseOnline.Application/Features/Security/Commands/Register/RegisterUserCommand.cs" />
+      <File FileName="CourseOnline.Application/Features/Security/Commands/Register/RegisterUserCommandHandler.cs" Line="33" Column="17" />
+      <File FileName="CourseOnline.Application/Features/Security/Commands/Register/RegisterUserCommandValdiator.cs" Line="1" Column="1" />
+      <File FileName="CourseOnline.Application/Interfaces/IUserRepositoryAsync.cs" Line="6" Column="71" />
+      <File FileName="CourseOnline.Infraestructure.Persistence/Repositories/UserRepositoryAsync.cs" Line="11" Column="44" />
+      <File FileName="CourseOnline.Application/Interfaces/IUserSession.cs" />
+      <File FileName="CourseOnline.Security/TokenSecurity/UserSession.cs" />
+      <File FileName="CourseOnline.Application/Features/Security/Queries/CurrentUser/CurrentUserQuery.cs" />
+      <File FileName="CourseOnline.Application/Features/Security/Queries/CurrentUser/CurrentUserHandler.cs" />
+      <File FileName="CourseOnline.Application/Features/Security/Queries/CurrentUser/CurrentUserValidator.cs" />
+      <File FileName="CourseOnline.Application/Interfaces/Courses/ICourseRepositoryAsync.cs" Line="10" Column="23" />
+      <File FileName="CourseOnline.Infraestructure.Persistence/Repositories/CourseRepositoryAsync.cs" Line="28" Column="76" />
+      <File FileName="CourseOnline.Infraestructure.Persistence/Repositories/GenericRepositoryAsync.cs" Line="8" Column="18" />
+      <File FileName="CourseOnline.Application/DTOs/Courses/CourseDTO.cs" Line="26" Column="37" />
+      <File FileName="CourseOnline.Application/DTOs/Inastructors/InstructorDTO.cs" Line="14" Column="49" />
+      <File FileName="CourseOnline.Application/DTOs/CourseInstructor/CourseInstructorDTO.cs" Line="8" Column="1" />
+      <File FileName="CourseOnline.Infraestructure.Persistence/Migrations/CoursesOnlineConextModelSnapshot.cs" Line="13" Column="40" />
+      <File FileName="CourseOnline.Infraestructure.Persistence/Migrations/20230215165929_InitialMigration.Designer.cs" Line="14" Column="40" />
+      <File FileName="CourseOnline.Application/Features/Courses/Queries/GetCourse/GetCourseQuery.cs" Line="12" Column="1" />
+      <File FileName="CourseOnline.Application/Features/Courses/Queries/GetCourse/GetCourseHandler.cs" Line="25" Column="86" />
+      <File FileName="CourseOnline.Application/Features/Courses/Queries/GetCourse/GetCourseValidator.cs" Line="10" Column="67" />
+      <File FileName="CourseOnline.Application/Features/Courses/Commands/UpdateCourse/UpdateCourseCommand.cs" Line="6" Column="15" />
+      <File FileName="CourseOnline.Application/Features/Courses/Commands/UpdateCourse/UpdateCourseHandler.cs" Line="27" Column="16" />
+      <File FileName="CourseOnline.Application/Features/Courses/Commands/UpdateCourse/UpdateCourseValidator.cs" Line="16" Column="87" />
+      <File FileName="CourseOnline.Application/Interfaces/CourseInstructor/ICourseInstructorRepositoryAsync.cs" Line="8" Column="71" />
+      <File FileName="CourseOnline.Infraestructure.Persistence/Repositories/CourseInstructorRepositoryAsync.cs" Line="9" Column="123" />
+      <File FileName="CourseOnline.Application/Features/Courses/Commands/Delete/DeleteCourseCommand.cs" Line="8" Column="29" />
+      <File FileName="CourseOnline.Application/Features/Courses/Commands/Delete/DeleteCourseHandler.cs" Line="42" Column="31" />
+      <File FileName="CourseOnline.Application/Features/Courses/Commands/Delete/DeleteCourseValidators.cs" Line="10" Column="93" />
+      <File FileName="CourseOnline.Application/DTOs/Comment/CommentDTO.cs" Line="12" Column="43" />
+      <File FileName="CourseOnline.Application/DTOs/Price/PriceDTO.cs" Line="7" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -52,26 +76,31 @@
               <Node name="Controllers" expanded="True">
                 <Node name="v1" expanded="True" />
               </Node>
-              <Node name="Extensions" expanded="True" />
-              <Node name="Middlewares" expanded="True">
-                <Node name="ErrorHandlerMiddleware.cs" selected="True" />
-              </Node>
             </Node>
             <Node name="CourseOnline.Application" expanded="True">
               <Node name="DTOs" expanded="True">
-                <Node name="Login" expanded="True" />
+                <Node name="Comment" expanded="True" />
+                <Node name="Courses" expanded="True" />
+                <Node name="Price" expanded="True" />
               </Node>
+              <Node name="Exceptions" expanded="True" />
               <Node name="Features" expanded="True">
+                <Node name="Courses" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="Delete" expanded="True" />
+                    <Node name="UpdateCourse" expanded="True" />
+                  </Node>
+                </Node>
                 <Node name="Security" expanded="True">
                   <Node name="Commands" expanded="True">
                     <Node name="Register" expanded="True" />
                   </Node>
-                  <Node name="Queries" expanded="True">
-                    <Node name="Login" expanded="True" />
-                  </Node>
                 </Node>
               </Node>
-              <Node name="Interfaces" expanded="True" />
+              <Node name="Interfaces" expanded="True">
+                <Node name="CourseInstructor" expanded="True" />
+                <Node name="Courses" expanded="True" />
+              </Node>
               <Node name="Mappings" expanded="True" />
             </Node>
             <Node name="CourseOnline.Domain" expanded="True">
@@ -80,19 +109,16 @@
             <Node name="CourseOnline.Infraestructure.Persistence" expanded="True">
               <Node name="Repositories" expanded="True" />
             </Node>
-            <Node name="CourseOnline.Security" expanded="True">
-              <Node name="TokenSecurity" expanded="True" />
-            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.Application/Features/Courses/Queries/GetAllCourses/GetAllCoursesQueryHandler.cs" relfile="CourseOnline.Application/Features/Courses/Queries/GetAllCourses/GetAllCoursesQueryHandler.cs" line="26" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.CourseOnline.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

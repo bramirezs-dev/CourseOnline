@@ -12,6 +12,10 @@ using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CourseOnline.Application.Interfaces.Courses;
+using CourseOnline.Application.Interfaces.CourseInstructors;
+using CourseOnline.Application.Interfaces.Comments;
+using CourseOnline.Application.Interfaces.Prices;
 
 namespace CourseOnline.Infraestructure.Persistence
 {
@@ -21,7 +25,7 @@ namespace CourseOnline.Infraestructure.Persistence
         {
             if (configuration.GetValue<bool>("UseInMemoryDatabase"))
             {
-                service.AddDbContext<CoursesOnlineConext>(opt =>
+                service.AddDbContext<CoursesOnlineContext>(opt =>
                 {
                     opt.UseInMemoryDatabase(databaseName: "CoursesOnline");
                 });
@@ -29,22 +33,27 @@ namespace CourseOnline.Infraestructure.Persistence
             }
             else
             {
-                service.AddDbContext<CoursesOnlineConext>(opt =>
+                service.AddDbContext<CoursesOnlineContext>(opt =>
                 {
                     opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
-                        b => b.MigrationsAssembly(typeof(CoursesOnlineConext).Assembly.FullName)
+                        b => b.MigrationsAssembly(typeof(CoursesOnlineContext).Assembly.FullName)
                        );
                 });
             }
 
             service.AddTransient(typeof(IGenericRepositoryAsync<>), typeof(GenericRepositoryAsync<>));
             service.AddTransient<IUserRepositoryAsync, UserRepositoryAsync>();
+            service.AddTransient<ICourseRepositoryAsync, CourseRepositoryAsync>();
+            service.AddTransient<ICourseInstructorRepositoryAsync, CourseInstructorRepositoryAsync>();
+            service.AddTransient<ICommentRepositoryAsync, CommentRepositoryAsync>();
+            service.AddTransient<IPriceRepositoryAsync, PriceRepositoryAsync>();
+
 
             // Add Service Identity
             var builder = service.AddIdentityCore<User>();
             var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
 
-            identityBuilder.AddEntityFrameworkStores<CoursesOnlineConext>()
+            identityBuilder.AddEntityFrameworkStores<CoursesOnlineContext>()
                 .AddSignInManager<SignInManager<User>>();
 
 
