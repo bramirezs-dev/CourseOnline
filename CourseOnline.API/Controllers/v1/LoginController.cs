@@ -1,6 +1,7 @@
 ﻿using System;
 using CourseOnline.Application.DTOs.Login;
 using CourseOnline.Application.Features.Security.Commands.Register;
+using CourseOnline.Application.Features.Security.Commands.UpdateUser;
 using CourseOnline.Application.Features.Security.Queries.CurrentUser;
 using CourseOnline.Application.Features.Security.Queries.Login;
 using CourseOnline.Domain.Entities;
@@ -32,6 +33,12 @@ namespace CourseOnline.API.Controllers.v1
         public async Task<ActionResult<UserDTO>> ReturnUser()
         {
             return await Mediator.Send(new CurrentUserQuery());
+        }
+
+        [HttpPut]
+        public async Task<ActionResult<UserDTO>> UpdateUser(UpdateUserCommand user)
+        {
+            return await Mediator.Send(user);
         }
     }
 }
