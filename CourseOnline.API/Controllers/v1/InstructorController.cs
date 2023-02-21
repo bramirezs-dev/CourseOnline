@@ -6,6 +6,7 @@ using CourseOnline.Application.Features.Instructors.Queries.GetCourses;
 using CourseOnline.Application.Features.Instructors.Queries.GetInstructor;
 using CourseOnline.Domain.DapperEntities;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CourseOnline.API.Controllers.v1
@@ -18,7 +19,7 @@ namespace CourseOnline.API.Controllers.v1
 		public InstructorController()
 		{
 		}
-
+        [Authorize(Roles = "Admin")]
 		[HttpGet]
 
 		public async Task<IEnumerable<InstructorModel>> GetInstructors()

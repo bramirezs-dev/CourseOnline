@@ -35,10 +35,12 @@ namespace CourseOnline.Application.Features.Security.Queries.Login
 
             var isValid = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
 
+            var roles = await _userManager.GetRolesAsync(user);
+
             if (isValid.Succeeded)
             {
                 var result = _mapper.Map<UserDTO>(user);
-                result.Token = _jwtGenerator.CreateToken(user);
+                result.Token = _jwtGenerator.CreateToken(user,roles.ToList());
                 return result;
             }
 
