@@ -48,6 +48,11 @@
     <Folder Include="Features\Instructors\Command\UpdateInstructor\" />
     <Folder Include="Features\Instructors\Command\DeleteInstructor\" />
     <Folder Include="Features\Instructors\Queries\GetInstructor\" />
+    <Folder Include="Features\Comments\" />
+    <Folder Include="Features\Comments\Commands\" />
+    <Folder Include="Features\Comments\Queries\" />
+    <Folder Include="Features\Comments\Commands\AddComment\" />
+    <Folder Include="Features\Comments\Commands\DeleteComment\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -96,5 +101,10 @@
     <None Remove="Features\Instructors\Command\UpdateInstructor\" />
     <None Remove="Features\Instructors\Command\DeleteInstructor\" />
     <None Remove="Features\Instructors\Queries\GetInstructor\" />
+    <None Remove="Features\Comments\" />
+    <None Remove="Features\Comments\Commands\" />
+    <None Remove="Features\Comments\Queries\" />
+    <None Remove="Features\Comments\Commands\AddComment\" />
+    <None Remove="Features\Comments\Commands\DeleteComment\" />
   </ItemGroup>
 </Project>
