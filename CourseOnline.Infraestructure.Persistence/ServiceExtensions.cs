@@ -19,6 +19,7 @@ using CourseOnline.Application.Interfaces.Prices;
 using CourseOnline.Infraestructure.Persistence.DapperConecction;
 using CourseOnline.Application.Interfaces.Dapper;
 using CourseOnline.Application.Interfaces.Instructors;
+using CourseOnline.Application.Interfaces.PaginationDapper;
 
 namespace CourseOnline.Infraestructure.Persistence
 {
@@ -53,7 +54,7 @@ namespace CourseOnline.Infraestructure.Persistence
 
 
             service.AddTransient<IInstructorRepositoryAsync, InstructorRepositoryAsync>();
-
+            service.AddTransient<IPaginationRepositoryAsync, PaginationRepositoryAsync>();
 
 
             // Add Service Identity
