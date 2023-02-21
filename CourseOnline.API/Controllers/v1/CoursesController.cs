@@ -1,10 +1,12 @@
 ﻿using System;
 using CourseOnline.Application.DTOs.Courses;
+using CourseOnline.Application.DTOs.Dapper;
 using CourseOnline.Application.Features.Courses.Commands.CreateCourse;
 using CourseOnline.Application.Features.Courses.Commands.DeleteCourse;
 using CourseOnline.Application.Features.Courses.Commands.UpdateCourse;
 using CourseOnline.Application.Features.Courses.Queries.GetAllCourses;
 using CourseOnline.Application.Features.Courses.Queries.GetCourse;
+using CourseOnline.Application.Features.Courses.Queries.GetPagination;
 using CourseOnline.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -36,6 +38,12 @@ namespace CourseOnline.API.Controllers.v1
         public async Task<Course> AddCourse(CreateCourseDTO course)
         {
             return await Mediator.Send(new CreateCourseCommand { courseDTO = course});
+        }
+
+        [HttpPost("filter")]
+        public async Task<PaginationModel> PaginationCourse(PaginationQuery filters)
+        {
+            return await Mediator.Send(filters);
         }
 
         [HttpPut("{id}")]
