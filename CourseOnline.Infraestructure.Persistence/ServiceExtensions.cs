@@ -16,6 +16,9 @@ using CourseOnline.Application.Interfaces.Courses;
 using CourseOnline.Application.Interfaces.CourseInstructors;
 using CourseOnline.Application.Interfaces.Comments;
 using CourseOnline.Application.Interfaces.Prices;
+using CourseOnline.Infraestructure.Persistence.DapperConecction;
+using CourseOnline.Application.Interfaces.Dapper;
+using CourseOnline.Application.Interfaces.Instructors;
 
 namespace CourseOnline.Infraestructure.Persistence
 {
@@ -49,6 +52,10 @@ namespace CourseOnline.Infraestructure.Persistence
             service.AddTransient<IPriceRepositoryAsync, PriceRepositoryAsync>();
 
 
+            service.AddTransient<IInstructorRepositoryAsync, InstructorRepositoryAsync>();
+
+
+
             // Add Service Identity
             var builder = service.AddIdentityCore<User>();
             var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
@@ -57,6 +64,15 @@ namespace CourseOnline.Infraestructure.Persistence
                 .AddSignInManager<SignInManager<User>>();
 
 
+            // configuration chain connection dapper
+            service.AddTransient<IFactoryConnection, FactoryConnection>();
+            service.AddOptions();
+
+            service.Configure<ConfigurationConnection>(
+            opt =>
+            {
+                opt.DefaultConnection = configuration.GetConnectionString("DefaultConnection");
+            });
         }
     }
 }

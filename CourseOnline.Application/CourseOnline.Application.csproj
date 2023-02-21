@@ -38,6 +38,16 @@
     <Folder Include="DTOs\Comment\" />
     <Folder Include="DTOs\Price\" />
     <Folder Include="Interfaces\Comments\" />
+    <Folder Include="Interfaces\Dapper\" />
+    <Folder Include="Interfaces\Instructors\" />
+    <Folder Include="Features\Instructors\" />
+    <Folder Include="Features\Instructors\Command\" />
+    <Folder Include="Features\Instructors\Queries\" />
+    <Folder Include="Features\Instructors\Queries\GetCourses\" />
+    <Folder Include="Features\Instructors\Command\CreateInstructor\" />
+    <Folder Include="Features\Instructors\Command\UpdateInstructor\" />
+    <Folder Include="Features\Instructors\Command\DeleteInstructor\" />
+    <Folder Include="Features\Instructors\Queries\GetInstructor\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -76,5 +86,15 @@
     <None Remove="DTOs\Comment\" />
     <None Remove="DTOs\Price\" />
     <None Remove="Interfaces\Comments\" />
+    <None Remove="Interfaces\Dapper\" />
+    <None Remove="Interfaces\Instructors\" />
+    <None Remove="Features\Instructors\" />
+    <None Remove="Features\Instructors\Command\" />
+    <None Remove="Features\Instructors\Queries\" />
+    <None Remove="Features\Instructors\Queries\GetCourses\" />
+    <None Remove="Features\Instructors\Command\CreateInstructor\" />
+    <None Remove="Features\Instructors\Command\UpdateInstructor\" />
+    <None Remove="Features\Instructors\Command\DeleteInstructor\" />
+    <None Remove="Features\Instructors\Queries\GetInstructor\" />
   </ItemGroup>
 </Project>

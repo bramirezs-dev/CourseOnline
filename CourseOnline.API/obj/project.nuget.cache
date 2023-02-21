@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cmRWwHS7Yb4T/a2s5gYtKsrg0GncfaOBx2AsfumPMiKlFQvZ0sMBtKmiyahJnEqUJfpVSWD3cfQYQLEuUnZ+1Q==",
+  "dgSpecHash": "wn4sjGGTHkssqudNQyxIjzM6r8yhbYTnrQ6CWQaB54MEgZzUHJcVk7ooh88z6FHJxaM223QGFywN2o7h2+xicg==",
   "success": true,
   "projectFilePath": "/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.API/CourseOnline.API.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/brian.ramirez/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "/Users/brian.ramirez/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/brian.ramirez/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
+    "/Users/brian.ramirez/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
     "/Users/brian.ramirez/.nuget/packages/fluentvalidation/11.5.0/fluentvalidation.11.5.0.nupkg.sha512",
     "/Users/brian.ramirez/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.0/fluentvalidation.dependencyinjectionextensions.11.5.0.nupkg.sha512",
     "/Users/brian.ramirez/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

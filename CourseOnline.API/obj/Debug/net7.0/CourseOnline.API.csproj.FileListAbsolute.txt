@@ -98,3 +98,4 @@
 /Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.API/bin/Debug/net7.0/CourseOnline.Security.dll
 /Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.API/bin/Debug/net7.0/CourseOnline.Security.pdb
 /Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.API/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.API/bin/Debug/net7.0/Dapper.dll
