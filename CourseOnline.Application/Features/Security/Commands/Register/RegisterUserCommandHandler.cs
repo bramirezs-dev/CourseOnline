@@ -60,7 +60,7 @@ namespace CourseOnline.Application.Features.Security.Commands.Register
             if (result.Succeeded)
             {
                 var sendUser = _mapper.Map<UserDTO>(user);
-                sendUser.Token = _jwtGenerator.CreateToken(user);
+                sendUser.Token = _jwtGenerator.CreateToken(user,null);
 
                 return sendUser;
             }

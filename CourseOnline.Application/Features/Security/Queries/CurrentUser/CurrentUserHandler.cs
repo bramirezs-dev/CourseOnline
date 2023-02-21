@@ -26,8 +26,9 @@ namespace CourseOnline.Application.Features.Security.Queries.CurrentUser
         public async Task<UserDTO> Handle(CurrentUserQuery request, CancellationToken cancellationToken)
         {
             var user = await _userManager.FindByNameAsync(_userSession.GetUserSession());
+            var roles = await _userManager.GetRolesAsync(user);
             var result = _mapper.Map<UserDTO>(user);
-            result.Token = _jwtGenerator.CreateToken(user);
+            result.Token = _jwtGenerator.CreateToken(user,roles.ToList());
             return result;
              
         }
