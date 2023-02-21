@@ -12,6 +12,7 @@ namespace CourseOnline.Security
             service.AddScoped<IJwtGenerator, JwtGenerator>();
 
             service.AddScoped<IUserSession, UserSession>();
+
         }
     }
 }

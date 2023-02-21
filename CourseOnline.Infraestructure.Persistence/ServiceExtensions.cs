@@ -60,6 +60,8 @@ namespace CourseOnline.Infraestructure.Persistence
             // Add Service Identity
             var builder = service.AddIdentityCore<User>();
             var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
+            identityBuilder.AddRoles<IdentityRole>();
+            identityBuilder.AddClaimsPrincipalFactory<UserClaimsPrincipalFactory<User,IdentityRole>>();
 
             identityBuilder.AddEntityFrameworkStores<CoursesOnlineContext>()
                 .AddSignInManager<SignInManager<User>>();
