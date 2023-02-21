@@ -15,6 +15,7 @@ using CourseOnline.Security.TokenSecurity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using System.Text.Json.Serialization;
+using CourseOnline.Infraestructure.Persistence.DapperConecction;
 
 var builder = WebApplication.CreateBuilder(args);
 
