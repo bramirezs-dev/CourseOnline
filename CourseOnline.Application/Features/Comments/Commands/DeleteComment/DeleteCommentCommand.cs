@@ -1,11 +1,11 @@
 ﻿using System;
+using MediatR;
+
 namespace CourseOnline.Application.Features.Comments.Commands.DeleteComment
 {
-	public class DeleteCommentCommand
+	public class DeleteCommentCommand :IRequest
 	{
-		public DeleteCommentCommand()
-		{
-		}
+		public Guid CommentId { get; set; }
 	}
 }
 
