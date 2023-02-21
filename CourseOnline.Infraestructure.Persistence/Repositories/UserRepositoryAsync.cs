@@ -22,6 +22,11 @@ namespace CourseOnline.Infraestructure.Persistence.Repositories
             return exist ? true : false;
         }
 
+        public async Task<bool> ExistEmailAndUsername(string email, string username)
+        {
+            return await _user.Where( user => user.Email == email && user.UserName != username).AnyAsync();
+        }
+
         public async Task<bool> ExistUserName(string userName)
         {
             var exist = await _user.Where(user => user.UserName == userName).AnyAsync();
