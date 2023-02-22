@@ -57,7 +57,13 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                         ValidateIssuer = false
                     };
                 });
-
+                
+//add cors
+builder.Services.AddCors( options => {
+    options.AddPolicy("corsApp",builder => {
+        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
 //add configuration  reference circle en json
 
 
@@ -87,6 +93,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 // Authentication
 app.UseAuthentication();
