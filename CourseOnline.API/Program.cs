@@ -94,6 +94,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// add cors
+app.UseCors("corsApp");
+
+
 app.UseSwagger();
 app.UseSwaggerUI();
 
