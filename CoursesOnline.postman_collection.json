@@ -1,0 +1,917 @@
+{
+	"info": {
+		"_postman_id": "48a81d4f-9224-472b-b1d6-54427f97ecd0",
+		"name": "CoursesOnline",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17817908"
+	},
+	"item": [
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Add Comment",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const courses = JSON.parse(responseBody);",
+									"if(courses.length > 0){",
+									"    const courseId = courses[0].id",
+									"    const lastCourseId =  courses[courses.length-1].id;",
+									"    pm.environment.set(\"courseId\",courseId)",
+									"    pm.environment.set(\"lastCourseId\",lastCourseId)",
+									"}else{",
+									"    pm.environment.set(\"courseId\",\"ac9ad71e-aa66-492f-6a03-08db0fb54fd7\")",
+									"    pm.environment.set(\"lastCourseId\",\"a7f501df-1065-4e28-8a9f-911372fda662\")",
+									"",
+									"}",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Student\":\"BRS\",\n    \"Score\":5,\n    \"TextComment\":\"the perfec course\",\n    \"CourseId\":\"f4681841-4b6f-415f-8ea4-070ce4eea1c2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/comments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete comment",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const courses = JSON.parse(responseBody);",
+									"if(courses.length > 0){",
+									"    const courseId = courses[0].id",
+									"    const lastCourseId =  courses[courses.length-1].id;",
+									"    pm.environment.set(\"courseId\",courseId)",
+									"    pm.environment.set(\"lastCourseId\",lastCourseId)",
+									"}else{",
+									"    pm.environment.set(\"courseId\",\"ac9ad71e-aa66-492f-6a03-08db0fb54fd7\")",
+									"    pm.environment.set(\"lastCourseId\",\"a7f501df-1065-4e28-8a9f-911372fda662\")",
+									"",
+									"}",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Student\":\"BRS\",\n    \"Score\":5,\n    \"TextComment\":\"the perfec course\",\n    \"CourseId\":{{courseId}}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/comments/d9057d49-a514-4375-8c66-2f774eec1d8f",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"comments",
+								"d9057d49-a514-4375-8c66-2f774eec1d8f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "Get Courses",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const courses = JSON.parse(responseBody);",
+									"if(courses.length > 0){",
+									"    const courseId = courses[0].id",
+									"    const lastCourseId =  courses[courses.length-1].id;",
+									"    pm.environment.set(\"courseId\",courseId)",
+									"    pm.environment.set(\"lastCourseId\",lastCourseId)",
+									"}else{",
+									"    pm.environment.set(\"courseId\",\"ac9ad71e-aa66-492f-6a03-08db0fb54fd7\")",
+									"    pm.environment.set(\"lastCourseId\",\"a7f501df-1065-4e28-8a9f-911372fda662\")",
+									"",
+									"}",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Courses",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Courses Pagination",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const courses = JSON.parse(responseBody);",
+									"if(courses.length > 0){",
+									"    const courseId = courses[0].id",
+									"    const lastCourseId =  courses[courses.length-1].id;",
+									"    pm.environment.set(\"courseId\",courseId)",
+									"    pm.environment.set(\"lastCourseId\",lastCourseId)",
+									"}else{",
+									"    pm.environment.set(\"courseId\",\"ac9ad71e-aa66-492f-6a03-08db0fb54fd7\")",
+									"    pm.environment.set(\"lastCourseId\",\"a7f501df-1065-4e28-8a9f-911372fda662\")",
+									"",
+									"}",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Title\":\"C\",\n    \"NumberPage\":1,\n    \"CountElement\":5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Courses/filter",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Courses",
+								"filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Courses/{{courseId}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Courses",
+								"{{courseId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"title\": \"c#\",\n        \"description\": \"this is a c# Course\",\n        \"publishDate\": \"2022-01-01T00:00:00\",\n        \"instructors\": [\"3984fa29-6b28-45fc-a67b-ed0fcc1cd33e\"],\n        \"Price\":100,\n        \"promotion\":0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Courses/571bc4bb-a833-4961-08b1-08db0fae0325",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Courses",
+								"571bc4bb-a833-4961-08b1-08db0fae0325"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"Title\" :\"C++\",\n\n        \"Description\" :\"This is course C++ By Brian Ramirez\",\n\n        \"PublishDate\" :\"2022-01-01\",\n        \"Instructors\":[\"3984fa29-6b28-45fc-a67b-ed0fcc1cd33e\"],\n        \"Price\":120.0,\n        \"Promotion\":123.0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Courses",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Courses/{{lastCourseId}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Courses",
+								"{{lastCourseId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Instructors",
+			"item": [
+				{
+					"name": "Get instructors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/instructor",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"instructor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get instructor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/instructor/3984fa29-6b28-45fc-a67b-ed0fcc1cd33e",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"instructor",
+								"3984fa29-6b28-45fc-a67b-ed0fcc1cd33e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create instructor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\":\"Test\",\n    \"LastName\":\"Test Dev\",\n    \"Grade\":\"Tecnologo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/instructor",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"instructor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update instructor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\":\"Rosa\",\n    \"LastName\":\"Ramirez Salazar\",\n    \"Grade\":\"Tecnology\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/instructor/bdd3fd05-aa22-4a60-8757-c41e821c4f8a",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"instructor",
+								"bdd3fd05-aa22-4a60-8757-c41e821c4f8a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete instructor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/instructor/bdd3fd05-aa22-4a60-8757-c41e821c4f8a",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"instructor",
+								"bdd3fd05-aa22-4a60-8757-c41e821c4f8a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var json = JSON.parse(responseBody)",
+									"pm.environment.set(\"token\",json.token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Email\":\"brian.ramirez@dev.com\",\n    \"Password\":\"Passwords123$\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Email\":\"1234@gmail.com\",\n    \"Password\":\"Passwrod12!!\",\n    \"Name\":\"test\",\n    \"LastName\":\"test2\",\n    \"UserName\":\"elstest\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Login/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Login",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Email\":\"12345@gmail.com\",\n    \"Password\":\"Passwrod12!!!\",\n    \"Name\":\"test dev\",\n    \"LastName\":\"qa\",\n    \"UserName\":\"elstest\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get session",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Email\":\"1234@gmail.com\",\n    \"Password\":\"Passwrod12!!\",\n    \"Name\":\"test\",\n    \"LastName\":\"test2\",\n    \"UserName\":\"elstest\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "Create Role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\":\"Admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Role",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Role For User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Username\":\"bramirez\",\n    \"Rolname\":\"Admins\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Role/adduserrole",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Role",
+								"adduserrole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Role For User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Username\":\"bramirez\",\n    \"Rolname\":\"Admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Role/deleteuserrole",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Role",
+								"deleteuserrole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Roles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\":\"Admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Role",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Role",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\":\"Admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Role/bramirez",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Role",
+								"bramirez"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\":\"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Role",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Role"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
