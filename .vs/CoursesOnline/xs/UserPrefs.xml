@@ -1,6 +1,12 @@
 ﻿<Properties StartupConfiguration="{E4E637BD-39E3-40D4-A0D5-22689F2F4C6C}|http">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.API/Controllers/v1/CommentsController.cs" relfile="CourseOnline.API/Controllers/v1/CommentsController.cs" line="20" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CourseOnline.API/Controllers/v1/CommentsController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CourseOnline.API/Program.cs">
     <Files>
       <File FileName="CourseOnline.API/appsettings.json" />
       <File FileName="CourseOnline.API/Controllers/WeatherForecastController.cs" />
@@ -8,7 +14,7 @@
       <File FileName="CourseOnline.Application/Features/Courses/Queries/GetAllCourses/GetAllCoursesQuery.cs" />
       <File FileName="CourseOnline.Application/Features/Courses/Queries/GetAllCourses/GetAllCoursesQueryHandler.cs" />
       <File FileName="CourseOnline.Domain/Entities/Course.cs" />
-      <File FileName="CourseOnline.API/Program.cs" />
+      <File FileName="CourseOnline.API/Program.cs" Line="98" Column="21" />
       <File FileName="CourseOnline.Application/ServiceExtensions.cs" />
       <File FileName="CourseOnline.Application/Features/Courses/Commands/CreateCourse/CreateCourseCommand.cs" />
       <File FileName="CourseOnline.Application/Features/Courses/Commands/CreateCourse/CreateCourseCommandHandler.cs" />
@@ -100,17 +106,18 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CoursesOnline" expanded="True" />
+          <Node name="CoursesOnline" expanded="True">
+            <Node name="CourseOnline.API" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="v1" expanded="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/brian.ramirez/Documents/projects/backend/visual/CourseOnline/CourseOnline.API/Controllers/v1/CommentsController.cs" relfile="CourseOnline.API/Controllers/v1/CommentsController.cs" line="20" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.CourseOnline.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CourseOnline.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

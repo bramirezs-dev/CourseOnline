@@ -16,7 +16,7 @@ const RegisterUser = () => {
         email: "",
         password: "",
         confirmpassword: "",
-        username: "",
+        userName: "",
     } 
     const [user, setUser] = useState(initialUser);
 
@@ -32,9 +32,8 @@ const RegisterUser = () => {
     e.preventDefault();
     registerUser(user).then(
         (response : any)  => {
-            
-            console.log(response);
-            //window.localStorage.setItem("token", <String>response.data.token)
+            const { data } = response;
+            window.localStorage.setItem("token", data)
         }
     )
   };
@@ -80,8 +79,8 @@ const RegisterUser = () => {
               </Grid>
               <Grid item xs={12} md={6}>
                 <TextField
-                  name="username"
-                  value={user.username}
+                  name="userName"
+                  value={user.userName}
                   onChange={handleDataUser}
                   variant="outlined"
                   fullWidth
