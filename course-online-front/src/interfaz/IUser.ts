@@ -4,7 +4,7 @@ interface IUser {
   email: string;
   password: string;
   confirmpassword: string;
-  username: string;
+  userName: string;
 }
 
 export default IUser;
