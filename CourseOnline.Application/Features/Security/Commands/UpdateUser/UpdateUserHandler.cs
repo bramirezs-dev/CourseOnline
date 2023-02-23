@@ -43,7 +43,7 @@ namespace CourseOnline.Application.Features.Security.Commands.UpdateUser
                 };
             }
 
-            user.NameComplete = $"{request.Name} {request.LastName}";
+            user.NameComplete = request.CompleteName;
             user.PasswordHash = _passwordHasher.HashPassword(user,request.Password);
             user.Email = request.Email;
 

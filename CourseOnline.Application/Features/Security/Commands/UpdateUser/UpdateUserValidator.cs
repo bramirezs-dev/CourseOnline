@@ -7,8 +7,7 @@ namespace CourseOnline.Application.Features.Security.Commands.UpdateUser
         public UpdateUserValidator()
         {
             RuleFor(user => user.Email).NotNull().NotEmpty().WithMessage("it's required email");
-            RuleFor(user => user.Name).NotNull().NotEmpty().WithMessage("it's required email");
-            RuleFor(user => user.LastName).NotNull().NotEmpty().WithMessage("it's required email");
+            RuleFor(user => user.CompleteName).NotNull().NotEmpty().WithMessage("it's required name");
             RuleFor(user => user.Password).NotNull().NotEmpty().WithMessage("it's required email");
         }
     }

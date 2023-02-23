@@ -5,9 +5,7 @@ namespace CourseOnline.Application.Features.Security.Commands.UpdateUser
 {
     public class UpdateUserCommand : IRequest<UserDTO>
     {
-        public string Name { get; set; }
-
-        public string LastName { get; set; }
+        public string CompleteName { get; set; }
 
         public string Email { get; set; }
 
